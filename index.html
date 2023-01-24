@@ -1,0 +1,86 @@
+wd<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equações</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Preencha os campos e calcule!</h1>
+    </header>
+    <section>
+        <h1>Baskara</h1>
+           
+        <p>A <i>baskara</i> é expressa pela seguinte equação:</p>
+        <p> &Delta;=b²-4.a.c </p>
+        <p>x' = (-b+ &radic;&Delta;)/2.a </p>
+        <p>x'' = (-b- &radic;&Delta;)/2.a </p>
+        <p>informe os valores de <strong>a, b, c</strong>  e clique em "calcular" </p>
+            
+        a: <input type="number" name="a" id="txta" style="width: 40px;">
+        b: <input type="number" name="b" id="txtb" style="width: 40px;">
+        c: <input type="number" name="c" id="txtc" style="width: 40px;"><br> <br>
+
+        <input type="button" value="Calcular" onclick="baskara()"> 
+            
+        </p>    
+        <div id="res1">
+            
+
+        </div>
+    </section> <br>
+    <section>
+        <h1>MUV - movimento uniformemente variavel</h1>
+        <p>A equação <i>MUV</i> é composta pela seguinte equação: </p>
+        <p>v = vo + a.t</p>
+        <p>sendo:</p>
+        <p><b>v</b> = velocidade final || <b>vo</b> = velocidade inicial || <b>a</b> = aceleração || <b>t</b> = tempo</p>
+        
+        v: <input type="number" name="txtv" id="txtv" style="width: 40px;" >
+        vo: <input type="number" name="txtvo" id="txtvo" style="width: 40px;" >
+        a: <input type="number" name="txtac" id="txtac" style="width: 40px;" >
+        t: <input type="number" name="txtt" id="txtt" style="width: 40px;" ><br>
+
+        <p><i>Importante:</i> Deixe <strong>apenas uma</strong> caixa de texto vazia e assim tera o valor da variavel referente a este campo </p>
+
+        <input type="button" value="Calcular" onclick="muv()"><br> <br>
+
+        <div id="res2">
+            
+        </div>
+
+    </section><br>
+    <section>
+        <h1>Segunda Lei de Newton</h1>
+        <p>A equação da segunda lei de Newton é expressa por:</p>
+        <p>F=m.a</p>
+        <p>sendo:</p>
+        <p><b>F</b>= força || <b>m</b>= massa || <b>a</b>= aceleração</p>
+        F: <input type="number" name="txtf" id="txtf" style="width: 40px;">
+        m: <input type="number" name="txtm" id="txtm" style="width: 40px;">
+        a: <input type="number" name="txtac2" id="txtac2" style="width: 40px;">
+
+        <input type="button" value="Calcular" onclick="forca()">
+
+        <p><i>Importante:</i> Deixe <strong>apenas uma</strong> caixa de texto vazia e assim tera o valor da variavel referente a este campo </p>
+
+        <div id="res3">
+            
+        </div>
+
+    </section>
+    
+        
+    <footer>
+        <p style="color: rgb(153, 159, 161);"><i>Atualize a página para recalcular</i></p>
+        <p>&copy; EMJS</p>
+    </footer>
+
+    <script src="equações.js"></script>
+    
+</body>
+</html>
