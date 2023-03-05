@@ -23,8 +23,8 @@ function baskara() {
 
         } else {
 
-            x1 = (-bl + (raizdelta)) / 2 * al
-            x2 = (-bl - (raizdelta)) / 2 * al
+            x1 = ((-bl + (raizdelta)) / 2 * al).toFixed(2)
+            x2 = ((-bl - (raizdelta)) / 2 * al).toFixed(2)
 
             res1.innerHTML = `<mark><b>x'= ${x1}</b></mark>  || <mark><b>x'' ${x2}</b></mark>`
 
@@ -46,15 +46,15 @@ function muv() {
     var tl = Number(t.value)
 
     if (v.value.length == 0) {
-        var vw = vol + (al * tl)
+        var vw = (vol + (al * tl)).toFixed(2)
         res2.innerHTML = ` A velocidade final do objeto é de <mark>${vw}m/s</mark>`
 
     } else if (vo.value.length == 0) {
-        var vol = (vl - (al * tl))
+        var vol = ((vl - (al * tl))).toFixed(2)
         res2.innerHTML = ` A velocidade inicial do objeto é de <mark>${vol}m/s</mark>`
 
     } else if (at.value.length == 0) {
-        var al = (vl - vol) / tl
+        var al = ((vl - vol) / tl).toFixed(2)
 
         if (al > 0) {
             res2.innerHTML = `O objeto esta acelerando a <mark>${al}m/s²</mark>`
@@ -67,7 +67,7 @@ function muv() {
 
         }
     } else if (t.value.length == 0) {
-        tl = (vl - vol) / al
+        tl = ((vl - vol) / al).toFixed(2)
 
         if (tl < 0) {
             tl = Math.abs(tl);
@@ -90,15 +90,15 @@ function forca() {
 
 
     if (f.value.length == 0) {
-        var fl = ml * av
+        var fl = (ml * av).toFixed(2)
         res3.innerHTML = `A força resultante do objeto é <mark>${fl}N</mark>`
 
     } else if (m.value.length == 0) {
-        var ml = fl / av
+        var ml = (fl / av).toFixed(2)
         res3.innerHTML = `A massa do objeto é de <mark>${ml}Kg</mark>`
 
     } else if (af.value.length == 0) {
-        var av = fl / ml
+        var av = (fl / ml).toFixed(2)
         res3.innerHTML = `A aceleração é de <mark>${av}m/s²</mark>`
     }
 }
